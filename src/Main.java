@@ -66,7 +66,13 @@ public class Main {
     }
     public static void task9 () {
         System.out.println("Задача 9");
-
+        int safe = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i ++) {
+            total = total + total / 100;
+            total = total + safe;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+        }
     }
     public static void task10 () {
         System.out.println("Задача 10");
